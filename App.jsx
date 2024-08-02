@@ -1,6 +1,4 @@
 import { View, Text, Image } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useState, useEffect } from "react";
 import HomeScreen from "./screens/HomeScreen";
 import CreateScreen from "./screens/CreateScreen";
@@ -10,6 +8,8 @@ import SnackIcon from "./assets/icon.png";
 import SignInMailScreen from "./screens/SignInMailScreen";
 import { useAuthStore } from "./stores/auth";
 import { supabase } from "./lib/supabase";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator();
 
